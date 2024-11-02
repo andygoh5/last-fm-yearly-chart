@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function redirect() {
+            const fromDate = '2024-01-01';
+            const toDate = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+            const page = 1;
+            const url = `https://www.last.fm/user/andygoh5/library/tracks?from=${fromDate}&to=${toDate}&page=${page}`;
+            window.location.href = url;
+        }
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <p>Redirecting to your track library...</p>
+</body>
+</html>
